@@ -1,0 +1,96 @@
+.afw {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.afw__hero,
+.afw__card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  min-width: 0;
+}
+
+.afw__eyebrow {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.afw h2,
+.afw h3,
+.afw h4 {
+  margin-top: 0;
+}
+
+.afw__hero h2 {
+  margin-top: 0.5rem;
+}
+
+.afw__flow {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.75rem;
+  padding: 0;
+  margin: 1.25rem 0 0;
+  counter-reset: flow;
+}
+
+.afw__flow li {
+  counter-increment: flow;
+  position: relative;
+  background: var(--bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.afw__flow li::before {
+  content: counter(flow);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.afw__flow span {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.afw__group h3 {
+  border-left: 4px solid var(--afw-accent);
+  padding-left: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.afw__intro {
+  margin: 0 0 1rem;
+  opacity: 0.8;
+}
+
+.afw__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1rem;
+}
+
+.afw__card {
+  border-top: 3px solid var(--afw-accent);
+}
+
+.afw__card p {
+  margin: 0 0 0.75rem;
+}
+
+.afw__example {
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.75rem;
+  margin-bottom: 0 !important;
+}

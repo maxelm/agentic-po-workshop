@@ -1,0 +1,67 @@
+.pew {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.pew__hero,
+.pew__card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.pew__eyebrow {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.pew h2,
+.pew h3 {
+  margin-top: 0;
+}
+
+.pew__hero h2 {
+  margin-top: 0.5rem;
+}
+
+.pew__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 1.25rem;
+}
+
+.pew__card {
+  min-width: 0;
+}
+
+.pew details {
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.pew summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.pew summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.pew__prompt {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: 0.85rem/1.6 var(--mono);
+  background: var(--bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  user-select: text;
+}
